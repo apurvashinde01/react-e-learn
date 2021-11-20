@@ -1,0 +1,29 @@
+.img_responsive {
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0%;
+}
+
+.svg-container {
+  width: 10em;
+}
+
+.client_logo {
+  /* height: 10em; */
+  width: 20em;
+  padding: 2%;
+}
+
+.center_text{
+  text-align: center;
+}
+
+.white_text{
+  color: white;
+}
+
+.center_div{
+  justify-content: center;
+}
