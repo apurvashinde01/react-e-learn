@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function CourseCard() {
     return (
         <>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem' }} className="shadow p-3 mb-5 bg-white rounded">
                 <Card.Img variant="top" src={default_course} />
                 <Card.Body>
                     <Card.Title>Course Title<Badge style={{ marginLeft: '1em' }} bg="success">New</Badge>
@@ -43,7 +43,7 @@ function CourseCard() {
                     <Link to="/Cart">
                         <Button variant="primary">Enroll</Button>
                     </Link>
-                    <Link to="/bookmark">
+                    <Link to="/Account">
                         <img src="https://img.icons8.com/material-outlined/24/000000/bookmark-ribbon--v1.png"
                             style={{ height: '1.5em', marginLeft: '1em' }}
                         />

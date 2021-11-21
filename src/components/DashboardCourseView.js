@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function DashboardCourseView() {
     return (
         <>
-            <Container className="border border-primary rounded" style={{ marginTop: '1em', marginBottom: '1em' }}>
+            <Container className="border border-secondary shadow p-3 mb-5 bg-white rounded" style={{ marginTop: '1em', marginBottom: '1em' }}>
                 <Row>
                     <Col
                         style={{ padding: '2em' }}

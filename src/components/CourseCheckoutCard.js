@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function CourseCheckoutCard() {
     return (
         <>
-            <Container className="border border-primary rounded" style={{ marginTop: '1em', marginBottom: '1em' }}>
+            <Container className="border border-secondary shadow p-3 mb-5 bg-white rounded" style={{ marginTop: '1em', marginBottom: '1em' }}>
                 <Row>
                     <Col
                         style={{ padding: '2em' }}
@@ -22,8 +22,10 @@ function CourseCheckoutCard() {
                                 Some quick example text to build on the card title and make up the bulk of
                                 the card's content.
                             </Card.Text>
-                            <Button variant="primary">Bookmark</Button>
-                            <Button variant="outline-danger" style={{ marginLeft: '0.5em' }}>Remove</Button>
+                            <Button variant="primary"><img src="https://img.icons8.com/material-outlined/24/000000/bookmark-ribbon--v1.png"
+                                style={{ height: '1.5em' }}
+                            /></Button>
+                            <Button variant="outline-danger" style={{ marginLeft: '0.5em' }}>X</Button>
                         </Card.Body>
                     </Col>
                 </Row>

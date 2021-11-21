@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function NavbarCompo() {
     return (
-        <Navbar>
+        <Navbar className="shadow bg-white rounded">
             <Container>
                 <Navbar.Brand href="#">
                     <img src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/000000/external-degree-skill-building-inipagistudio-mixed-inipagistudio.png" />

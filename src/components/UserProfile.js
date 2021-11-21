@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Form, Image, Nav, Row, Tab, Button } from 'react-bootstrap'
+import { Col, Container, Form, Image, Nav, Row, Tab, Button, Tabs } from 'react-bootstrap'
 import DashboardCourseView from './DashboardCourseView'
 import default_learner from "../static/images/default_learner.jpg";
 
@@ -12,7 +12,7 @@ function UserProfile() {
                         <Col sm={3}>
                             <Nav variant="pills" className="flex-column">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">My courses</Nav.Link>
+                                    <Nav.Link eventKey="first">Enrolled & Bookmarked</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="second">Profile</Nav.Link>
@@ -54,10 +54,16 @@ function UserProfile() {
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="first">
 
-                                    <DashboardCourseView />
-                                    <DashboardCourseView />
-                                    <DashboardCourseView />
-
+                                    <Tabs defaultActiveKey="Enrolled" id="uncontrolled-tab-example" className="mb-3">
+                                        <Tab eventKey="Enrolled" title="Enrolled">
+                                            <DashboardCourseView />
+                                            <DashboardCourseView />
+                                            <DashboardCourseView />
+                                        </Tab>
+                                        <Tab eventKey="Bookmarked" title="Bookmarked">
+                                            <DashboardCourseView />
+                                        </Tab>
+                                    </Tabs>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
                                     <Container className="top_margin">
@@ -67,8 +73,8 @@ function UserProfile() {
 
                                             <Col>
                                                 <Form className="top_margin">
-                                                    
-                                                <Form.Group className="mb-3" controlId="formBasicPassword">
+
+                                                    <Form.Group className="mb-3" controlId="formBasicPassword">
                                                         <Form.Label>Password</Form.Label>
                                                         <Form.Control type="password" placeholder="Password" />
                                                     </Form.Group>
